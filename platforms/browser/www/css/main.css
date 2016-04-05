@@ -35,10 +35,15 @@ h1{
 }
 li{
     font-size: 25px;
+    
+}
+h4{
+    display: inline-block;
 }
 span{
     float: right;
  margin-right: auto;
+    display: inline-block;
 }
 #title{
     width: 80%;
@@ -51,6 +56,9 @@ span{
 }
 li{
     list-style: none;
+}
+#add{
+    overflow: scroll;
 }
 
 

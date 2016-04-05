@@ -3,13 +3,18 @@ var app = {
 init: function(ev){
     //called after DOMContentLoaded/device ready
 
+    
+
+    
     document.querySelector(".fab").addEventListener("click", app.navigate);
 
     document.querySelector(".xbtn").addEventListener("click", app.navigate );
         document.querySelector(".xbtn").addEventListener("click", app.fetchList);
+    
     document.querySelector(".check").addEventListener("click", app.upload);
         
     document.querySelector(".camera").addEventListener("click", app.takePic ); 
+    
     document.querySelector(".back").addEventListener("click", app.navigate ); 
 
     //get list of things for the homepage 
@@ -56,6 +61,8 @@ init: function(ev){
 	
 	
     fetchList: function () {
+        
+        
         //prepare the XML HTTP Request
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://griffis.edumedia.ca/mad9022/reviewr/reviews/get/");
@@ -72,7 +79,11 @@ init: function(ev){
     
         //send the request
         xhr.send(params);
+            
+      
+        
     },
+    
     
 
      gotList: function(ev){

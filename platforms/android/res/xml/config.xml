@@ -12,7 +12,7 @@
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
     <allow-intent href="market:*" />
-    <name>ReviewApp</name>
+    <name>ReviewMe</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>

@@ -52,6 +52,9 @@ span{
 li{
     list-style: none;
 }
+#add{
+    overflow: scroll;
+}
 
 
 .fab{

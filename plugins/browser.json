@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.app"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.app"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.wils0751.app"
+        }
+    },
+    "dependent_plugins": {}
+}

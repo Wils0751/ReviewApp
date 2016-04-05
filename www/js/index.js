@@ -24,7 +24,7 @@ init: function(ev){
 	 upload: function(ev){
 
         ev.preventDefault();
-        //get the luist of the review for a specific UUID from edumedia
+        //get the list of the review for a specific UUID from edumedia
         var xhr = new XMLHttpRequest();
          
          		      
@@ -278,4 +278,5 @@ function init() {
 
 document.addEventListener("DOMContentLoaded", init);
 ///deviceready
-
+//References
+//http://codepen.io/Wils0751/pen/vGZvRY

@@ -69,9 +69,7 @@ init: function(ev){
         
         
         
-        //feedback to user
-       // document.querySelector("#msg").textContent = "Request Sent.";
-                
+    
         //send the request
         xhr.send(params);
     },
@@ -97,11 +95,11 @@ init: function(ev){
                    
                 li.innerHTML += '<span class="Stars">\u2605</span>'; 
                     
-                    // data.reviews[i].rating;
+
                 }
-//                li.classList.add("cardReview");
+
                 li.id = data.reviews[i].id;
-//                li.setAttribute("data-href", "details")
+
                 
                 li.addEventListener("click" , app.navigate);
                 li.addEventListener("click", app.fetchSingleList);
@@ -247,7 +245,7 @@ takePic: function(ev){
         var realData = "data:image/jpeg;base64," + imageData; 
         image.src = realData;
         encodedData = encodeURIComponent(realData);
-        alert("picture");
+    
         
     },
     cameraError: function(message){
@@ -256,7 +254,7 @@ takePic: function(ev){
 
   navigate: function(ev){
     ev.preventDefault();
-    var url = ev.target.getAttribute("data-href"); //home or add or feeback
+    var url = ev.target.getAttribute("data-href"); //home or add or details
     history.pushState({"page":url}, null, "#" + url);
     [].forEach.call(document.querySelectorAll("[data-role=page]"), function(item, index){
       //this function runs once for each[data-role]
